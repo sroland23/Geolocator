@@ -1,0 +1,5 @@
+FROM python:3
+ADD geocode.py /
+RUN pip install requests
+RUN pip install pandas
+CMD [ "python", "./geocode.py" ]
