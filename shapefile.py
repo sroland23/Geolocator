@@ -10,7 +10,7 @@ from shapely.geometry import Polygon
 from binascii import hexlify
 from psycopg2.extensions import cursor
 
-connection = psycopg2.connect(database="abc", user="postgres", password = "@bcD!234", host = "127.0.0.1", port = "5432")
+connection = psycopg2.connect(database="abc", user="postgres", password = "12345", host = "host", port = "X")
 cur = connection.cursor()
 cur.execute('CREATE TABLE IF NOT EXISTS mygis(id serial primary key,Name text,Type  text,x float,y float,geom geometry);')
 
