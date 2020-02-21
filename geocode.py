@@ -4,7 +4,7 @@ from pprint import pprint
 import pandas as pd
 
 address = '1600 Amphitheatre Parkway, Mountain View, CA'
-apikey = 'AIzaSyC7cdBVTqxjJDD0jkUtlObYRveKePy38GY'
+apikey = 'YOUR API KEY'
 
 response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={}&key={}'.format(address.replace('','+'), apikey))
 
